@@ -23,8 +23,10 @@ const Order = () => {
       // collect data
       const myProducts = {
           ...productsInfo,
-          //  productName:order.name,
-          //  pic:order.pic
+          
+           productName:order.name,
+
+            picture:order.pic
       }
           console.log(myProducts);
       
@@ -99,6 +101,7 @@ onBlur={handleOnBlur}
   placeholder="email"
   defaultValue={user?.email}
 />
+
 <label htmlFor="floatingPasswordCustom">email</label>
 </Form.Floating>
   <Button type="submit" className="btn btn-primary">submit</Button>

@@ -2,6 +2,7 @@ import { Rating } from '@mui/material';
 // import Rating from "react-rating-stars-component";
 import Button from '@restart/ui/esm/Button';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Review = () => {
@@ -16,7 +17,7 @@ const Review = () => {
   },[])
     return (
         <div style={{margin:"12"}}>
-          <h3 style={{margin:"12"}}>Review System</h3>
+           
            {
              review.map(item=><div>
              <div>

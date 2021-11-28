@@ -42,6 +42,7 @@ function App() {
       <Route exact path="/register">
        <Register></Register>
       </Route>
+
      
       <PrivateRoute path="/orders/:id">
       <Order></Order>

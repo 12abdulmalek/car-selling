@@ -39,6 +39,7 @@ const Myorders = () => {
         }
             
        } 
+       console.log(orders);
     return (
       <div>
           
@@ -46,7 +47,7 @@ const Myorders = () => {
          {
                 orders.map(item=> <div>
                     <h1>{item.productName}</h1>
-                    <img src={item.pic}/>
+                    <img src={item.picture}/>
                     <span>{item.email}</span>
                     
                     <Button className="btn btn-danger" onClick={()=>{deleteData(item._id)}}>delete item</Button>

@@ -27,6 +27,9 @@ const Navigation = () => {
                 <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/dashboard">
                     <Button color="inherit">Dashboard</Button>
                 </NavLink>
+                <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/review">
+                    <Button color="inherit">Review</Button>
+                </NavLink>
                 {/* <Link style={{ textDecoration: 'none', color: 'white' }} to="/myorders"><Button color="inherit">myOrders</Button></Link> */}
                 <Button style={{ textDecoration: 'none', color: 'white' }} onClick={userLogOut} color="inherit">Logout</Button>
                 <Button style={{ textDecoration: 'none', color: 'white' }}>{user.displayName}</Button>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Service = (props) => {
     const{id,price,name,desc,pic,_id} = props.item;
-    console.log(id);
+    // console.log(id);
     return (
         <Col >
         <Card>

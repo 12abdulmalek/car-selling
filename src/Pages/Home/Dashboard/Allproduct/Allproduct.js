@@ -5,11 +5,12 @@ import { Card, ListGroup } from 'react-bootstrap';
 const Allproduct = () => {
     const [orders , setOrders] =useState([]);
     useEffect(()=>{
-        const url = `http://localhost:5000/orders`
+        const url = `https://desolate-mesa-41652.herokuapp.com/orders`
         fetch(url)
         .then(res =>res.json())
         .then(data=>{
                 setOrders(data) 
+                console.log(data);
         }
        )
     },[]);
@@ -30,17 +31,19 @@ const Allproduct = () => {
         }
             
        } 
+    console.log(orders);
     return (
         <div>
          {
              orders.map(item =>
              <div>
              <Card className="text-center">
-             <Card.Img variant="top" src={item.pic} />
+             <Card.Img variant="top" src={item.picture} />
   {/* <Card.Header>Featured</Card.Header> */}
   <Card.Body>
-    <Card.Title>{item.name}</Card.Title>
   
+    <Card.Title>{item.productName}</Card.Title>
+    <Card.Title>{item.email}</Card.Title>
     <Button className="btn btn-danger" onClick={()=>{deleteData(item._id)}}>delete item</Button>
   </Card.Body>
   
