@@ -14,6 +14,7 @@ const Review = () => {
       setReviewSystem(myReview);
   }
     const handleOnSubmit = (e) =>{
+       const proced = window.confirm("are you sure to give me some reviw?");{
         const myProducts = {
             ...reviewSystem
             
@@ -35,6 +36,7 @@ const Review = () => {
                     // setIsSuccess(true);
                 }
             });
+       }
   
         e.preventDefault();
     }

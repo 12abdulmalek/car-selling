@@ -21,7 +21,7 @@ const Myorders = () => {
        )
     },[]);
     const deleteData = (item) => {
-        const proced = window.confirm('are you delete your data');
+        const proced = window.confirm('Are you want to cancel this order?');
         if(proced){
            const url = `https://desolate-mesa-41652.herokuapp.com/orders/${item}`
            fetch(url,{
